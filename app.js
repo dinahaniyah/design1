@@ -41,16 +41,55 @@ $(document).ready(function () {
   });
 
   // GIFT
+  // $(".gift-button").on("click", function () {
+  //   // var url = $(this).attr("href");
+  //   $.ajax({
+  //     url: "modal/gift.html",
+  //     success: function (result) {
+  //       $(".modal-content").html(result);
+  //       $("#myGift").modal("show");
+  //     },
+  //   });
+  // });
 
-  $(".gift-button").on("click", function (e) {
+  // $(".gift-button").on("click", function (e) {
+  //   e.preventDefault();
+  //   $("#myGift")
+  //     .modal("show")
+  //     .find(".modal-content")
+  //     .load($(this).attr("href"));
+  // });
+
+  //======================== FORM LOVE STORY========================================
+  // FORM
+  const scriptURLGift =
+    "https://script.google.com/macros/s/AKfycbx20h5w1pwJu_1yHuPy4aZT4U1aK3SOlojHtdu2ylx6Cbbo8TVXePedTbi8Y1XmfZSU/exec";
+  const formGift = document.forms["gift-form"];
+
+  const btnSend = document.querySelector(".btn-send");
+  const btnSending = document.querySelector(".btn-sending");
+  const alertGift = document.querySelector(".alert-gift");
+
+  formGift.addEventListener("submit", (e) => {
     e.preventDefault();
-    $("#myGift")
-      .modal("show")
-      .find(".modal-content")
-      .load($(this).attr("href"));
+    // when submit
+    btnSending.classList.toggle("d-none");
+    btnSend.classList.toggle("d-none");
+
+    fetch(scriptURLGift, { method: "POST", body: new FormData(formGift) })
+      .then((response) => {
+        btnSending.classList.toggle("d-none");
+        btnSend.classList.toggle("d-none");
+        alertGift.classList.toggle("d-none");
+
+        formGift.reset();
+
+        console.log("Success!", response);
+      })
+      .catch((error) => console.error("Error!", error.message));
   });
 
-  // FORM
+  // ======================FORM WISHES
   const scriptURLWishes =
     "https://script.google.com/macros/s/AKfycbz5Cnw7FxilrNxInlMwtgZDq-nFqCl5gLGVSIheuWch5zjk5JZJdWmsGIJCvwPsDIUw/exec";
   const formWishes = document.forms["wishes-form"];

@@ -1,18 +1,3 @@
-//   DATA
-$.getJSON("data/mainData.json", function (data) {
-  var groomNick = "";
-  var brideNick = "";
-
-  $.each(data, function (key, value) {
-    groomNick += value.nick_groom;
-    brideNick += value.nick_bride;
-  });
-  $(".groom_name").append(groomNick);
-  $(".bride_name").append(brideNick);
-
-  // $(groomName).name_groom.appendTo;
-});
-
 // FORM
 const scriptURLGift =
   "https://script.google.com/macros/s/AKfycbx20h5w1pwJu_1yHuPy4aZT4U1aK3SOlojHtdu2ylx6Cbbo8TVXePedTbi8Y1XmfZSU/exec";
