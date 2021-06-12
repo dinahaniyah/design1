@@ -55,10 +55,24 @@ $(document).ready(function () {
     "https://script.google.com/macros/s/AKfycbz5Cnw7FxilrNxInlMwtgZDq-nFqCl5gLGVSIheuWch5zjk5JZJdWmsGIJCvwPsDIUw/exec";
   const formWishes = document.forms["wishes-form"];
 
+  const sendWishes = document.querySelector(".send-wishes");
+  const sendingWishes = document.querySelector(".sending-wishes");
+  // const alertGift = document.querySelector(".alert-gift");
   formWishes.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    sendingWishes.classList.toggle("d-none");
+    sendWishes.classList.toggle("d-none");
+
     fetch(scriptURLWishes, { method: "POST", body: new FormData(formWishes) })
-      .then((response) => console.log("Success!", response))
+      .then((response) => {
+        sendingWishes.classList.toggle("d-none");
+        sendWishes.classList.toggle("d-none");
+        // alertGift.classList.toggle("d-none");
+
+        formWishes.reset();
+        console.log("Success!", response);
+      })
       .catch((error) => console.error("Error!", error.message));
   });
 });
