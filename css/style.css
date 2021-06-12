@@ -1,0 +1,418 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  background-color: #333 !important;
+}
+/* -----------------MODAL------------- */
+.dialog-onload {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.content-onload {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  border-radius: 0 !important;
+  background: #333 !important;
+}
+
+.text-onload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-align: center;
+}
+
+.button-onload {
+  margin: 1rem;
+  background-color: #fff;
+}
+/* ----------------------------------- */
+.wedding {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f5f5f5;
+}
+/* ---------------header------------- */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #19423e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.header-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-groom {
+  text-align: center;
+}
+
+.header-date {
+}
+
+/* ---------------Quote------------- */
+
+.quote-section {
+  width: 100%;
+  height: auto;
+  padding: 10%;
+}
+
+.quote-ayat {
+  text-align: center;
+}
+
+/* ---------------The Bride and Broom------------- */
+.bride-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  background-color: #fff;
+  padding: 3%;
+}
+
+.bride-card {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bride-title {
+}
+
+.bride-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.bride-name {
+}
+
+.bride-parent {
+}
+
+/* ---------------The Dates------------- */
+.dates-section {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORMAT FOR H2  */
+.dates-title {
+  text-align: center;
+  line-height: 3;
+}
+
+.dates-countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  width: 90%;
+  /* color: white; */
+}
+
+.dates-countdown div {
+  display: inline-block;
+  /* min-width: 90px; */
+}
+
+.dates-countdown div span {
+  /* color: #b1cdf1; */
+  display: block;
+  font-size: 0.35em;
+  font-weight: 400;
+}
+
+.dates-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.dates-name {
+}
+
+.dates-held {
+}
+
+.dates-time {
+}
+
+.dates-place {
+}
+
+.dates-button {
+  width: 200px;
+  padding: 0.3rem 1rem;
+  margin: 1rem 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dates-divider {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #e5e5e5;
+}
+
+/* ---------------Streaming------------- */
+.streaming-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.streaming-title {
+}
+
+.streaming-text {
+}
+
+.streaming-button {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0.5rem 0;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+}
+/* ---------------Love Story------------- */
+.story-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 0.6rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: " ";
+  background: #333;
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #333;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 1.1rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: " ";
+  background: #ddd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 1px;
+  width: 14px;
+  height: 14px;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------Galery------------- */
+.galery-section {
+  width: 100%;
+  padding: 5%;
+}
+
+.galery-title {
+  text-align: center;
+  line-height: 3;
+}
+.galery-photos {
+}
+
+.galery-video {
+  overflow: hidden;
+  /* padding-bottom: 56.25%; */
+  position: relative;
+  margin: 1rem 0;
+  height: 60vh;
+}
+
+.galery-video > iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------Wedding Gift------------- */
+.gift-section {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gift-title {
+}
+
+.gift-text {
+}
+
+.gift-button {
+}
+
+.gift-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.gift-card {
+  width: 100%;
+  /* height: 100px; */
+  padding: 5%;
+  background-color: #f5f5f5;
+}
+
+.gift-card > p {
+  line-height: 0.6;
+}
+.gift-divider {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+}
+.gift-confirmation {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+/* ---------------Wedding Wishes------------- */
+.wishes-section {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wishes-title {
+}
+
+.wishes-text {
+}
+
+.wishes-form {
+  width: 100%;
+}
+
+/* ---------------Footer------------- */
+.footer {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+<div class="modal-header">
+  <h5 class="modal-title">Wedding Gift <span class="bride_name"></span></h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>   
+<div class="modal-body">
+  <div class="gift-wrapper">
+    <div class="gift-card">
+      <p><b>Rekening</b></p>
+      <p>a/n Jane Brooklyn </p>
+      <p>123-456-785-1010 </p>
+    </div>
+    <div class="gift-card">
+      <p><b>Rekening</b></p>
+      <p>a/n Jane Brooklyn </p>
+      <p>123-456-785-1010 </p>
+    </div>
+  </div>
+  <hr class="gift-divider">
+
+  <!-- ALERT -->
+  <div class="alert alert-success alert-dismissible fade show d-none alert-gift" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  <div class="gift-confirmation">
+    <p>Konfirmasi Pengiriman Gift</p>
+    <form class="gift-form" name="gift-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nama Anda" name="nama_pengirim"  required>
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" placeholder="Total gift" name="total"  required>
+      </div>
+      <!-- <div class="form-group">
+        <select class="custom-select" required>
+          <option selected disabled value="">Metode pengiriman</option>
+          <option value="hadir">Rekening</option>
+          <option value="tidak-hadir">Ovo</option>
+        </select>
+      </div> -->
+      <div class="form-group">
+          <textarea class="form-control" name="ucapan_gift" required placeholder="Ucapan selamat dan do'a untuk mempelai" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-send">Submit</button>
+      <button class="btn btn-primary btn-sending d-none" type="button" disabled >
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Sending...
+      </button>
+    </form>
+    
+  </div>
+</div>
+   
+<script src="../javascript/gift.js"></script>

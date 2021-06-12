@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>Design 1 OurInvitee </title>
+
+</head>
+
+<body>
+    <!-- ======================MODAL========================== -->
+    <div id="myModal" class="modal fade" data-backdrop="static" >
+        <div class="modal-dialog dialog-onload"  >
+            <div class="modal-content content-onload">
+                <div class="text-onload">
+                    <h4>Dear, <span id="tamu"></span></h4>
+                    <h4>Anda diundang dalam:</h4>
+                    <h2><span class="groom_name"></span> & Jane</h2>
+                    <h4>23 Januari 2020</h4>
+                    <button type="button" id="openInvitee" class="button-onload" data-dismiss="modal">Buka Undangan</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--=======================HEADER=====================================-->
+    <div class="wedding">
+        <div class="header" id="header">
+            <h4 class="header-title">
+                The Wedding
+            </h4>
+            <h1 class="header-groom">
+                <span class="groom_name"></span><br>
+                & <br>
+                <span class="bride_name"></span>
+            </h1>
+            <p class="header-date">22 January 2020</p>
+        </div>
+    
+        <!--==========================QUOTE==================================-->
+        <section class="quote-section">
+            <div class="quote-ayat">
+                <p>“Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan-nya
+                    pasangan hidup dari jenismu sendiri supaya kamu mendapatkan
+                    ketenangan hati, dan dijadikan-Nya Kasih Sayang diantara kamu,
+                    Sesungguhnya yang demikian itu menjadi tanda-tanda kebesaran-Nya
+                    bagi orang-orang yang berfikir.”</p>
+                <span class="ayat-num">(QS. Ar-Ruum :21)</span>
+            </div>
+    
+            <!-- quote image -->
+            <!-- quote special -->
+        </section>
+    
+        <!--======================THE BRIDE & THE BROOM==================================-->
+        <section class="bride-section">
+            <div class="bride-card">
+                <h3 class="bride-title">THE BRIDE</h3>
+                <img class="bride-image" src="">
+                <h2 class="bride-name">Brooklyn Cooper </h2>
+                <div class="bride-parents">
+                    <p>Putri dari:</p>
+                    <p>Dad Bride <br> Mom Bride</p>
+                </div>
+            </div>
+    
+            <div class="bride-card">
+                <h3 class="bride-title">THE BRIDE</h3>
+                <img class="bride-image" src="">
+                <h2 class="bride-name">Brooklyn Cooper </h2>
+                <div class="bride-parents">
+                    <p>Putri dari:</p>
+                    <p>Dad Bride <br> Mom Bride</p>
+                </div>
+            </div>
+        </section>
+    
+        <!--===========================SAVE THE DATES=======================================-->
+        <section class="dates-section">
+            <h2 class="dates-title">Save The Dates</h2>
+            <!-- -------------- -->
+            <div id="timer" class="dates-countdown"></div>
+                
+            <a class="dates-button" href="#" target="_blank"> add to calendar here</a>
+            <!-- ------------- -->
+            <div class="dates-card">
+                <h3 class="dates-name">Akad Nikah</h3>
+                <h4 class="dates-held">20 Januari 2020</h4>
+                <p class="dates-time">08:00 - 10:00</p>
+                <p class="dates-place">jl. where i can find a place to build my business</p>
+            </div>
+            
+            <hr class="dates-divider">
+    
+            <div class="dates-card">
+                <h3 class="dates-name">Resepsi</h3>
+                <h4 class="dates-held">20 Januari 2020</h4>
+                <p class="dates-time">10:00 - selesai</p>
+                <p class="dates-place">jl. where i can find a place to build my business</p>
+                <a class="dates-button" href="http://goo.gl/maps/NN2HxWkgatvymADE9" target="_blank">Lihat Lokasi</a>
+            </div>
+        </section>
+    
+        <!--==============================STREAMING=========================================-->
+        <section class="streaming-section">
+            <h2 class="streaming-title"> Live Streaming </h2>
+            <p class="streaming-text"> 
+                Jarak bukanlah menjadi suatu penghalang. Bapak/Ibu/Saudara/i
+                dapat menyaksikan acara pernikahan kami secara virtual melalui:
+            </p>
+            <a class="streaming-button" href="#" target="_blank">Zoom Live</a>
+            <a class="streaming-button" href="#" target="_blank">Zoom Live</a>
+        </section>
+    
+        <!--===============================LOVE STORY============================================-->    
+        <section class="story-section">
+            <h2 class="story-title">Our Story</h2>
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <!-- https://i.pinimg.com/564x/5d/9e/c8/5d9ec8d5b94198174e7c49261774c9dd.jpg -->
+                    <!-- Timeline -->
+                    <ul class="timeline">
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
+                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
+                        </li>
+                    </ul><!-- End -->
+            
+                </div>
+            </div>
+            
+        </section>
+        <!--===================================GALERY===========================================-->  
+        <section class="galery-section">
+            <h2 class="galery-title">Galery</h2>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+            <div class="galery-video">
+                <iframe
+                src='https://www.youtube.com/embed/rokGy0huYEA'
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Wedding Video"
+              ></iframe>
+            </div>
+        </section>
+
+        <!-- ===============================WEDDING GIFT===================================== -->
+        <section class="gift-section">
+            <h2 class="gift-title"> Wedding Gift </h2>
+            <p class="gift-text">Tanpa mengurangi rasa hormat bagi anda yang ingin memberikan tanda kasih, silahkan mengirimkan melalui tautan berikut: </p>
+            <button type="button" class="gift-button" href="modal/gift.html">Send Gift</button>
+            
+            <!-- GIFT MODAL -->
+            <div id="myGift" class="modal fade">
+                <div class="modal-dialog modal-lg ">
+                    <div class="modal-content">
+                    </div>
+                </div>
+            </div>
+
+
+
+                 
+              
+              
+        </section>
+
+
+        <!--========================= WEDDING WISHES =======================================-->
+        <section class="wishes-section">
+            <h2 class="wishes-title">Wedding Wishes</h2>
+            <p class="wishes-text">Kirimkan ucapan selamat dan do’a untuk: <br>
+                <span class="groom_name"></span>  & <span class="bride_name"></span>
+            </p>
+            <form class="wishes-form" name="wishes-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nama Anda" name="nama_tamu"  required>
+                </div>
+                <div class="form-group">
+                    <select class="custom-select" name="kehadiran" required>
+                        <option selected disabled value="">Konfirmasi Kehadiran</option>
+                        <option value="hadir">Bisa Hadir</option>
+                        <option value="tidak-hadir">Tidak Bisa Hadir</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="ucapan" rows="3" required placeholder="Ucapan selamat dan do'a untuk mempelai" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </section>
+
+        <!-- ================================FOOTER =====================================-->
+        <section class="footer">
+            <div class="footer-thanks">
+                <p>Thank you</p>
+                <h2><span class="groom_name"></span> & <span class="bride_name"></span></h2>
+            </div>
+    
+            <div class="footer-card">
+                <p>Made with <span>Love </span> by: </p>
+                Logoo.
+            </div>
+        </section>
+
+    </div>
+
+    
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="javascript/galery.js"></script>
+
+<script>
+
+</script>
+</html>
