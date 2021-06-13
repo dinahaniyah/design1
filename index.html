@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="javascript/app.js"></script>
 
     <title>Design 1 OurInvitee </title>
@@ -42,16 +42,16 @@
         <div class="header" id="header">
             <div id="particles-js"></div>
             <div data-aos="fade-up">
-            <h5 class="header-title">
-                The Wedding
-            </h5>
-            <h1 class="header-groom">
-                <span class="groom_name"></span><br>
-                & <br>
-                <span class="bride_name"></span>
-            </h1>
-            <p class="header-date">22 January 2020</p>
-        </div>
+                <p class="header-title">
+                    The Wedding Of
+                </p>
+                <h1 class="header-groom">
+                    <span class="groom_name"></span><br>
+                    & <br>
+                    <span class="bride_name"></span>
+                </h1>
+                <p class="header-date">22 January 2020</p>
+            </div>
         </div>
     
         <!--==========================QUOTE==================================-->
@@ -190,15 +190,13 @@
             <h2 class="gift-title"> Wedding Gift </h2>
             <p class="gift-text">Tanpa mengurangi rasa hormat bagi anda yang ingin memberikan tanda kasih, silahkan mengirimkan melalui tautan berikut: </p>
             <!-- <button type="button" class="gift-button" href="modal/gift.html">Send Gift</button> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myGift">
+            <button type="button" class=" btn-gift" data-toggle="modal" data-target="#myGift">
                 Send Gift
               </button>
             <!-- GIFT MODAL -->
             <div id="myGift" class="modal fade">
                 <div class="modal-dialog modal-lg ">
                     <div class="modal-content">
-
-
                         <div class="modal-header">
                             <h5 class="modal-title">Wedding Gift <span class="bride_name"></span></h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -228,7 +226,6 @@
                               </button>
                             </div>
                           
-                          
                             <div class="gift-confirmation">
                               <p>Konfirmasi Pengiriman Gift</p>
                               <form class="gift-form" name="gift-form">
@@ -255,25 +252,12 @@
                                   Sending...
                                 </button>
                               </form>
-                              
                             </div>
                           </div>
-                             
-                          
-
-
-
-
-
                     </div>
                 </div>
             </div>
 
-
-
-                 
-              
-              
         </section>
 
 
@@ -298,7 +282,7 @@
                     <textarea class="form-control" name="ucapan" rows="3" required placeholder="Ucapan selamat dan do'a untuk mempelai" required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary send-wishes">Submit</button>
+                <button type="submit" class="btn-wishes send-wishes">Submit</button>
                 <button class="btn btn-primary sending-wishes d-none" type="button" disabled >
                   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                   Sending...

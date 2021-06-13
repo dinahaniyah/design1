@@ -12,7 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none !important;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -110,7 +110,13 @@ p {
 .header {
   width: 100%;
   height: 100vh;
+  color: #fff;
   background-color: #19423e;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1602605786056-da87eadb5126?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fG1hcnJpZWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +128,8 @@ p {
 .header-title {
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 600;
+  z-index: 100;
 }
 
 .header-groom {
@@ -156,7 +164,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   background-color: #fff;
-  padding: 3%;
+  padding: 5%;
 }
 
 .bride-card {
@@ -190,17 +198,41 @@ p {
 /* ---------------The Dates------------- */
 .dates-section {
   width: 100%;
+  position: relative;
   padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
   align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1446831687499-c9188a15b9bd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGFic3RyYWN0JTIwZ3JlZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dates-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  z-index: 2;
 }
 
 /* FORMAT FOR H2  */
 .dates-title {
   text-align: center;
   line-height: 3;
+  z-index: 3;
 }
 
 .dates-countdown {
@@ -211,6 +243,7 @@ p {
   font-size: 2.5em;
   font-weight: 600;
   width: 90%;
+  z-index: 3;
   /* color: white; */
 }
 
@@ -233,6 +266,7 @@ p {
   justify-content: center;
   text-align: center;
   padding: 1rem 0;
+  z-index: 3;
 }
 
 .dates-name {
@@ -247,22 +281,28 @@ p {
 .dates-place {
 }
 
-.dates-button {
+.dates-button,
+.btn-gift,
+.btn-wishes {
   width: 200px;
   padding: 0.3rem 1rem;
-  margin: 1rem 0;
-  border: 1px solid black;
+  margin: 0.5rem 0;
+  border: none;
   border-radius: 20px;
   text-decoration: none;
   text-align: center;
+  color: #fff;
+  background-color: #333;
 }
 
 .dates-divider {
   width: 80%;
   margin: auto;
-  border: 1px solid #e5e5e5;
+  height: 1px;
+  border-width: 0;
+  background-color: #fff;
+  z-index: 3;
 }
-
 /* ---------------Streaming------------- */
 .streaming-section {
   width: 100%;
@@ -282,11 +322,14 @@ p {
 
 .streaming-button {
   width: 200px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 0.5rem 0;
   padding: 0.3rem 1rem;
+  margin: 0.3rem 0;
+  border: none;
+  border-radius: 20px;
   text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
 }
 /* ---------------Love Story------------- */
 .story-section {
@@ -453,6 +496,7 @@ li.timeline-item::before {
   padding: 10px;
   background-color: #f5f5f5;
 }
+
 /* ---------------Wedding Wishes------------- */
 .wishes-section {
   width: 100%;
