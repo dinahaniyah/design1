@@ -22,11 +22,13 @@
     <div id="myModal" class="modal fade" data-backdrop="static" >
         <div class="modal-dialog dialog-onload"  >
             <div class="modal-content content-onload">
+                <img src="https://images.unsplash.com/photo-1548765063-314376d48c70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
                 <div class="text-onload">
+                    <p>Kepada Bapak/Ibu/Saudara/i :</p>
                     <h4>Dear, <span id="tamu"></span></h4>
-                    <h4>Anda diundang dalam:</h4>
                     <h2><span class="groom_name"></span> & Jane</h2>
                     <h4>23 Januari 2020</h4>
+
                     <button type="button" id="openInvitee" class="button-onload" data-dismiss="modal">Buka Undangan</button>
                 </div>
 
@@ -38,10 +40,11 @@
     <!--=======================HEADER=====================================-->
     <div class="wedding">
         <div class="header" id="header">
-            <div data-aos="fade-in">
-            <h4 class="header-title">
+            <div id="particles-js"></div>
+            <div data-aos="fade-up">
+            <h5 class="header-title">
                 The Wedding
-            </h4>
+            </h5>
             <h1 class="header-groom">
                 <span class="groom_name"></span><br>
                 & <br>
@@ -53,7 +56,7 @@
     
         <!--==========================QUOTE==================================-->
         <section class="quote-section">
-            <div data-aos="fade-in">
+            <div data-aos="fade-up">
                 <div class="quote-ayat">
                     <p>“Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan-nya
                         pasangan hidup dari jenismu sendiri supaya kamu mendapatkan
@@ -323,6 +326,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="javascript/galery.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     AOS.init();
   </script>
