@@ -2,10 +2,10 @@
   {
     "header_bg": "pink",
     "real_date": "07/23/2021",
-    "date_akad": "10 January 2020",
+    "date_akad": "Sabtu, 10 January 2020",
     "time_akad": "08:00 - 10.00",
     "loc_akad": "jl. where i can find a place to build my business",
-    "date_resepsi": "11 January 2020",
+    "date_resepsi": "Minggu, 11 January 2020",
     "time_resepsi": "10:00 - selesai",
     "loc_resepsi": "jl. where i can find a place to build my business22",
     "link_map": "//goo.gl/maps/NN2HxWkgatvymADE9",
@@ -21,6 +21,7 @@
     "virtual_zoom1": "#zoom1",
     "virtual_zoom2": "#zoom2",
     "virtual_ig1": "#ig1",
-    "virtual_ig2": "#ig2"
+    "virtual_ig2": "#ig2",
+    "image_start": "https://images.unsplash.com/photo-1548765063-314376d48c70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
   }
 ]
