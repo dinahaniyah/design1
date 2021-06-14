@@ -26,7 +26,20 @@ $(document).ready(function () {
   $("#tamu").append(to);
 
   //   DATA
-  $.getJSON("../data/mainData.json", function (data) {
+
+  fetch("./data.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      // Work with JSON data here
+      console.log(data);
+    })
+    .catch((err) => {
+      // Do something for an error here
+    });
+
+  $.getJSON("data/mainData.json", function (data) {
     var groomNick = "";
     var brideNick = "";
     var image_1 = "";
@@ -83,7 +96,7 @@ $(document).ready(function () {
           },
         },
         size: {
-          value: 3,
+          value: 5,
           random: true,
           anim: {
             enable: true,
