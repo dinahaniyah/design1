@@ -1,4 +1,4 @@
-$.getJSON("../script/client/mainData.json", function (data) {
+$.getJSON("../data/mainData.json", function (data) {
   var groomNick = "";
   var brideNick = "";
   var image_1 = "";
