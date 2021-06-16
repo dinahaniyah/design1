@@ -4,7 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -12,8 +11,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="app.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
 
-    <title>Design 1 OurInvitee </title>
+    <title>Design 2 OurInvitee </title>
 
 </head>
 
@@ -74,23 +77,36 @@
         <!--======================THE BRIDE & THE BROOM==================================-->
         <section class="bride-section">
             <div class="bride-card">
-                <h3 class="bride-title">THE BRIDE</h3>
+              <div class="bride-left">
                 <img class="bride-image" src="">
-                <h2 class="bride-name">Brooklyn Cooper </h2>
-                <div class="bride-parents">
-                    <p>Putri pertama dari:</p>
-                    <p>Dad Bride <br> Mom Bride</p>
+                <span class="social-media">sss</span>
+              </div>
+                <div class="bride-detail">
+                  <h3 class="bride-name">Brooklyn Cooper , S.si </h3>
+                  <div class="bride-parents">
+                      <p>Putri pertama dari:<br>
+                      Dad Bride <br> Mom Bride</p>
+                  </div>
                 </div>
+            </div>
+
+            <div class="bride-and">
+              &
             </div>
     
             <div class="bride-card">
-                <h3 class="bride-title">THE BRIDE</h3>
+              <div class="bride-left">
                 <img class="bride-image" src="">
-                <h2 class="bride-name">Brooklyn Cooper </h2>
-                <div class="bride-parents">
-                    <p>Putri dari:</p>
-                    <p>Dad Bride <br> Mom Bride</p>
+                <span class="social-media">sss</span>
+              </div>
+                <div class="bride-detail">
+                  <h3 class="bride-name">Brooklyn Cooper </h3>
+                  <div class="bride-parents">
+                      <p>Putri dari:<br>
+                      Dad Bride <br> Mom Bride</p>
+                  </div>
                 </div>
+
             </div>
         </section>
     
@@ -131,7 +147,7 @@
             <a class="streaming-button" href="#" target="_blank">Zoom Live</a>
         </section>
     
-        <!--===============================LOVE STORY============================================-->    
+        <!--===============================LOVESTORY============================================-->    
         <section class="story-section">
             <h2 class="story-title">Our Story</h2>
             <div class="row">
@@ -158,22 +174,25 @@
         <!--===================================GALERY===========================================-->  
         <section class="galery-section">
             <h2 class="galery-title">Galery</h2>
-                <div class="swiper-container mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img class="galery_1"></div>
-                      <div class="swiper-slide"><img src="../images/image1.jpg"></div>
-                      <div class="swiper-slide">Slide 3</div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
-                    </div>
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-pagination"></div>
+            <div class="galery-photos">
+                  <div class="gallery-container" id="animated-thumbnails-gallery">
+                    <a data-lg-size="1600-1067" class="gallery-item " data-src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80">
+                      <img alt="layers of blue." class="img-responsive" src="https://images.unsplash.com/photo-1609342122563-a43ac8917a3a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80" />
+                    </a>
+                    <a data-lg-size="1600-2400" data-pinterest-text="Pin it2" data-tweet-text="lightGallery slide  2" class="gallery-item" data-src="https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80" >
+                      <img class="img-responsive" src="https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80" />
+                    </a>
+                    <a data-lg-size="1600-2400" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" class="gallery-item" data-src="https://images.unsplash.com/photo-1605973029521-8154da591bd7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80" >
+                      <img class="img-responsive" src="https://images.unsplash.com/photo-1605973029521-8154da591bd7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80" />
+                    </a>
+                    <a data-lg-size="1600-2398" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" class="gallery-item" data-src="https://images.unsplash.com/photo-1526281216101-e55f00f0db7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80" >
+                      <img class="img-responsive" src="https://images.unsplash.com/photo-1526281216101-e55f00f0db7a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=240&q=80" />
+                    </a>
+                    <a data-lg-size="1600-1067" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  4" class="gallery-item" data-src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80">
+                      <img class="img-responsive" src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
+                    </a>
                   </div>
+                </div>
             <div class="galery-video">
                 <iframe
                 src='https://www.youtube.com/embed/rokGy0huYEA'
@@ -236,10 +255,10 @@
                                   <input type="text" class="form-control rupiah"  placeholder="Nominal gift" name="total"  value="" data-type="currency" required>
                                 </div>
                                 <!-- <div class="form-group">
-                                  <select class="custom-select" required>
-                                    <option selected disabled value="">Metode pengiriman</option>
-                                    <option value="hadir">Rekening</option>
-                                    <option value="tidak-hadir">Ovo</option>
+                                  <select class="custom-select" name="jumlah_orang" required>
+                                    <option selected disabled value="">Jumlah orang</option>
+                                    <option value="1">1 orang</option>
+                                    <option value="2">2 orang</option>
                                   </select>
                                 </div> -->
                                 <div class="form-group">
@@ -279,6 +298,13 @@
                       </select>
                 </div>
                 <div class="form-group">
+                  <select class="custom-select" name="jumlah_orang" required>
+                    <option selected disabled value="">Jumlah orang</option>
+                    <option value="1">1 orang</option>
+                    <option value="2">2 orang</option>
+                  </select>
+                </div>
+                <div class="form-group">
                     <textarea class="form-control" name="ucapan" rows="3" required placeholder="Ucapan selamat dan do'a untuk mempelai" required></textarea>
                 </div>
 
@@ -307,11 +333,21 @@
 
     
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="script/galery.js"></script>
 <script src="script/data.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.0/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.0/plugins/zoom/lg-zoom.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+
+
   <script>
     AOS.init();
   </script>
