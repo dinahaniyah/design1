@@ -22,6 +22,6 @@
     "virtual_zoom2": "#zoom2",
     "virtual_ig1": "#ig1",
     "virtual_ig2": "#ig2",
-    "image_start": "/images/image1.jpg"
+    "image_start": "./images/image1.jpg"
   }
 ]
